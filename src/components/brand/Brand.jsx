@@ -1,24 +1,25 @@
 import React from 'react';
 import './brand.css';
 import { google, slack, atlassian, dropbox, shopify } from './imports';
+import Zoom from 'react-reveal/Zoom';
 
 const Brand = () => {
     return (
         <div className="gpt3__brand section__padding">
             <div>
-            <img src={google} />
+                <Zoom left  cascade> <img src={google} /> </Zoom>
             </div>
             <div>
-            <img src={slack} />
+                <Zoom bottom cascade> <img src={slack} /> </Zoom>
             </div>
             <div>
-            <img src={atlassian} />
+                <Zoom top cascade> <img src={atlassian} /> </Zoom>
             </div>
             <div>
-            <img src={dropbox} />
+                <Zoom bottom cascade> <img src={dropbox} /> </Zoom>
             </div>
             <div>
-            <img src={shopify} />
+                <Zoom right cascade> <img src={shopify} /> </Zoom>
             </div>
         </div>
     )
